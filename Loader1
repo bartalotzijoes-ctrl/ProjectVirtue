@@ -4,5 +4,5 @@ local gameScripts = {
 	[5555555555] = "https://raw.githubusercontent.com/yourusername/repo/main/game3_script.lua",
 }
 
-local url = gameScripts[game.GameId] or "https://raw.githubusercontent.com/yourusername/repo/main/universal_script.lua"
+local url = gameScripts[game.GameId] or "https://raw.githubusercontent.com/bartalotzijoes-ctrl/ProjectVirtue/refs/heads/main/Universal"
 loadstring(game:HttpGet(url))()
