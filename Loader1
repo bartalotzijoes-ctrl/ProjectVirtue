@@ -1,5 +1,5 @@
 local gameScripts = {
-	[1234567890] = "https://raw.githubusercontent.com/bartalotzijoes-ctrl/ProjectVirtue/refs/heads/main/Rivals",
+	[17625359962] = "https://raw.githubusercontent.com/bartalotzijoes-ctrl/ProjectVirtue/refs/heads/main/Rivals",
 	[9876543210] = "https://raw.githubusercontent.com/yourusername/repo/main/game2_script.lua",
 	[5555555555] = "https://raw.githubusercontent.com/yourusername/repo/main/game3_script.lua",
 }
