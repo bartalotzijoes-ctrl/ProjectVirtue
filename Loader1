@@ -1,9 +1,10 @@
 local gameScripts = {
-	[1234567890] = "https://raw.githubusercontent.com/yourusername/repo/main/game1_script.lua",
-	[9876543210] = "https://raw.githubusercontent.com/yourusername/repo/main/game2_script.lua",
-	[5555555555] = "https://raw.githubusercontent.com/yourusername/repo/main/game3_script.lua",
+	["RIVALS"] = "https://raw.githubusercontent.com/bartalotzijoes-ctrl/ProjectVirtue/refs/heads/main/Rivals",
+	["Brookhaven RP"] = "https://raw.githubusercontent.com/bartalotzijoes-ctrl/ProjectVirtue/refs/heads/main/Brookhaven",
+	["Bloxburg"] = "https://raw.githubusercontent.com/bartalotzijoes-ctrl/ProjectVirtue/refs/heads/main/Bloxburg",
 }
 
-print("Current Game ID: " .. game.GameId)
-local url = gameScripts[game.GameId] or "https://raw.githubusercontent.com/bartalotzijoes-ctrl/ProjectVirtue/refs/heads/main/Universal.lua"
+local name = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
+print("Game Name: " .. name)
+local url = gameScripts[name] or "https://raw.githubusercontent.com/bartalotzijoes-ctrl/ProjectVirtue/refs/heads/main/Universal"
 loadstring(game:HttpGet(url))()
