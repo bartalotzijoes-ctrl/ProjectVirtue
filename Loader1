@@ -1,1 +1,8 @@
+local gameScripts = {
+	[1234567890] = "https://raw.githubusercontent.com/yourusername/repo/main/game1_script.lua",
+	[9876543210] = "https://raw.githubusercontent.com/yourusername/repo/main/game2_script.lua",
+	[5555555555] = "https://raw.githubusercontent.com/yourusername/repo/main/game3_script.lua",
+}
 
+local url = gameScripts[game.GameId] or "https://raw.githubusercontent.com/yourusername/repo/main/universal_script.lua"
+loadstring(game:HttpGet(url))()
